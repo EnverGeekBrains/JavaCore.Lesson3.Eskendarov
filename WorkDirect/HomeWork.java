@@ -8,11 +8,11 @@ public class HomeWork {
                            "КИРПИЧ КЛЮЧ МИНУТА БЕТОН КНОПКА " +
                            "КОНВЕРТ ОКНО КЛЮЧ КОРОНА БОРОДА " +
                            "САМОЛЁТ ЧЕРНИЛА ПРИЕМНИК МИНУТА ПАЛЬМА";
-        List<String> list = Arrays.asList((justWords.split(" ")));
-        Set<String> set = new TreeSet<>(list);
+        final List<String> list = Arrays.asList((justWords.split(" ")));
+        final Set<String> set = new TreeSet<>(list);
         System.out.println(list);
         System.out.println(set);
-        Map<String, Integer> map = new HashMap<>();
+        final Map<String, Integer> map = new HashMap<>();
         for (String word : list) {
             if (map.containsKey(word)) {
                 map.put(word, map.get(word) + 1);
@@ -22,7 +22,7 @@ public class HomeWork {
         }
         map.forEach((word, count) -> System.out.println(word + " = " + count));
 
-        PhoneID phoneID = new PhoneID();
+        final PhoneID phoneID = new PhoneID();
         phoneID.add("Ivan", "78123452100");
         phoneID.add("Alexander", "79777777777");
         phoneID.add("Andrey", "79315550001");
